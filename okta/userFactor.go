@@ -110,7 +110,7 @@ func (m *UserFactorResource) EnrollFactor(ctx context.Context, userId string, bo
 		return nil, nil, err
 	}
 
-	userFactor := body
+	var userFactor *UserFactor
 
 	resp, err := rq.Do(ctx, req, &userFactor)
 	if err != nil {
