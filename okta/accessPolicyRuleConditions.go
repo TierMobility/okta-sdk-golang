@@ -26,7 +26,7 @@ type AccessPolicyRuleConditions struct {
 	BeforeScheduledAction *BeforeScheduledActionPolicyRuleCondition      `json:"beforeScheduledAction,omitempty"`
 	Clients               *ClientPolicyCondition                         `json:"clients,omitempty"`
 	Context               *ContextPolicyRuleCondition                    `json:"context,omitempty"`
-	Device                *DevicePolicyRuleCondition                     `json:"device,omitempty"`
+	Device                *DeviceAccessPolicyRuleCondition               `json:"device,omitempty"`
 	GrantTypes            *GrantTypePolicyRuleCondition                  `json:"grantTypes,omitempty"`
 	Groups                *GroupPolicyRuleCondition                      `json:"groups,omitempty"`
 	IdentityProvider      *IdentityProviderPolicyRuleCondition           `json:"identityProvider,omitempty"`

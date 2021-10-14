@@ -18,7 +18,7 @@
 
 package okta
 
-type AccessPolicyConstraints struct {
-	Knowledge *KnowledgeConstraint  `json:"knowledge"`
-	Possesion *PossessionConstraint `json:"possesion,omitempty"`
+type DeviceAccessPolicyRuleCondition struct {
+	Managed    *bool `json:"managed,omitempty"`
+	Registered *bool `json:"registered,omitempty"`
 }
