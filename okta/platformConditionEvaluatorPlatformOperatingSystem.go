@@ -19,7 +19,7 @@
 package okta
 
 type PlatformConditionEvaluatorPlatformOperatingSystem struct {
-	Expression string                                                    `json:"expression,omitempty"`
+	Expression string                                                    `json:"expression"`
 	Type       string                                                    `json:"type,omitempty"`
 	Version    *PlatformConditionEvaluatorPlatformOperatingSystemVersion `json:"version,omitempty"`
 }
