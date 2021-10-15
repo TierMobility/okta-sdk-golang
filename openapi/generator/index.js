@@ -451,7 +451,6 @@ function createJsonTag(propertyName) {
     propertyName === "admin" ||
     propertyName === "enduser" ||
     propertyName === "constraints" ||
-    propertyName === "knowledge" ||
     propertyName === "maxSessionIdleMinutes") {
     return " `json:\"" + propertyName + "\"`"
   } else {

@@ -19,6 +19,6 @@
 package okta
 
 type AccessPolicyConstraints struct {
-	Knowledge  *KnowledgeConstraint  `json:"knowledge"`
+	Knowledge  *KnowledgeConstraint  `json:"knowledge,omitempty"`
 	Possession *PossessionConstraint `json:"possession,omitempty"`
 }
